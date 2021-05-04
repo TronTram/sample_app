@@ -12,6 +12,9 @@ gem 'jbuilder',   '2.10.0'
 gem 'faker', '2.17.0'
 gem 'will_paginate', '3.1.8'
 gem 'bootstrap-will_paginate', '1.0.0'
+gem 'image_processing', '1.9.3'
+gem 'mini_magick', '4.9.5'
+gem 'active_storage_validations', '0.8.2'
 gem 'bootsnap',   '1.7.2', require: false
 
 group :development, :test do
@@ -39,6 +42,7 @@ end
 
 group :production do
   gem 'pg', '1.2.3'
+  gem 'aws-sdk-s3', '1.46.0', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
